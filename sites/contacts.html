@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/static/css/sidebars.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="row">
+        <div class="d-flex flex-column flex-shrink-0 p-4 text-bg-dark col-3">
+            <a href="home.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi pe-none me-2" width="40" height="32">
+                    <use xlink:href="/static/images/icons.svg#bootstrap" />
+                </svg>
+                <span class="fs-4">Меню</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="/static/images/icons.svg#home" />
+                        </svg>
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="categories.html" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="/static/images/icons.svg#speedometer2" />
+                        </svg>
+                        Категории
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html" class="nav-link text-white">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="/static/images/icons.svg#table" />
+                        </svg>
+                        Заказы
+                    </a>
+                </li>
+                <li>
+                    <a href="contacts.html" class="nav-link active" aria-current="page">
+                        <svg class="bi pe-none me-2" width="16" height="16">
+                            <use xlink:href="/static/images/icons.svg#people-circle" />
+                        </svg>
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="/static/images/my_avatar.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>Пользователь</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Content contacts-->
+        <div class="col-9 p-5">
+            <h1 class="text-center">Контакты</h1>
+            <div class="row">
+                <!--Card with form-->
+                <div class="col-6 p-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <!--Form name-->
+                                <label for="Name">Имя</label>
+                                <input type="text" class="form-control" id="Name">
+                                <!--Form email-->
+                                <label for="Email">Почта</label>
+                                <div class="input-group">
+                                    <div class="input-group-text">@</div>
+                                    <input type="email" class="form-control" id="Email">
+                                </div>
+                                <!--Form message-->
+                                <div class="mb-2">
+                                    <label for="Message">Сообщение</label>
+                                    <textarea class="form-control" id="Message" rows="3"></textarea>
+                                </div>
+                                <!--Button submit-->
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Text with contacts info-->
+                <div class="col-6 p-4">
+                    <h4 class="mb-4">Наши контакты:</h4>
+                    <p>Адрес: г.Москва</p>
+                    <p>Телефон: +7(777)777-77-77</p>
+                    <p>Почта: Sample@mail.ru</p>
+                    <p>Телеграм: https://t.me/Bootstrap</p>
+                    <p>VK: https://vk.com/Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
